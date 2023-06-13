@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/f09d85331a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<title>Kakao Health</title>
+</head>
+<body>
+
+  <nav class = "navbar">
+    <div class = "navbar_logo">
+      <i class="fa-solid fa-house"></i>
+      <b href="">kakaohealth</b>
+
+    </div>
+    <ul class = "navbar_menu">
+      <li><a href="kakaohealth.html">Home</a></li>
+      <li><a href="kakaofriends.html">Friends</a></li>
+      <li><a href="kakaobmi.html">How</a></li>
+      <li><a href="">Download</a></li>
+    </ul>
+    <ui class = "navbar_icons">
+      <li><i class="fa-brands fa-twitch"></i></li>
+      <li><i class="fa-brands fa-youtube"></i></li>
+    </ui>
+
+  </nav>
+
+        <div class="container">
+            <h1>kakao Friends</h1>
+            <h2>for Health</h2>
+            <a href="javascript:kakaoLogin()" class="kakao-login">
+              <img src="img/kakaologin.png">
+          </a>
+            <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+             <script>
+              window.Kakao.init("d359297bed9b9acf7ab67cd7e1fc2edb");
+             function kakaoLogin() {
+                window.Kakao.Auth.login({
+                  scope: 'profile_nickname, account_email, gender',
+                    success: function (authObj) {
+                    console.log(authObj);
+                    window.Kakao.API.request({
+                    url: '/v2/user/me',
+                    success: function (res) {
+                        const kakao_account = res.kakao_account;
+                        console.log(kakao_account);
+                    }
+                });
+            }
+        });
+    }
+</script>
+          </div>
+          
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"><h2>카카오 소개</h2></div>
+    <div class="menuitem"><h2>카카오 역사</h2></div>
+    <div class="menuitem"><h2>카카오 헬스 사용법</h2>
+        <ul class = "navbar_menu1">
+          <li><a href="kakaobmi.html"><h3 style="color : black; font-size : 20px;">운동 정보 입력</h3></a></li>
+          <li><a href="kakaobab.html"><h3 style="color : black;font-size : 20px;">식단 관리</h3></a></li>
+          <li><a href="kakaohealth.html"><h3 style="color : black;font-size : 20px;">출석 체크</h3></a></li>
+
+        </ul>
+    </div>
+  </div>
+
+
+  <div class="main">
+    <h2 style="font-size:44px">카카오 프렌즈와 함께 운동하기</h2>
+    <h3>Play with kakao friends</h3>
+    <div class="box-container">
+      <div class="box">
+        <img src="img/run.png"></src>
+        <div class="text-container">
+            <h3>카카오와 함께 운동관리!</h3>
+            <P>카카오 헬스에 입력한 운동 정보로 자신의 운동량을 측정할 수 있습니다.</P>
+        </div>
+    </div>
+      <div class="box">
+        <img src="img/run2.png" style="margin-top: 50px;"></src>
+        <div class="text-container">
+          <h3>항상 실패하는 다이어트에 도움을!</h3>
+          <p>카카오 헬스는 식단관리와 운동 스케쥴을 체크할 수 있어 다이어트에 도움을 줍니다.</p>
+      </div>
+      </div>
+      <div class="box">
+        <img src="img/run3.png"></src>
+        <div class="text-container">
+          <h3>끝까지 함께 운동을 도와주는 어플</h3>
+          <p>매일매일 출석체크로 운동이 끊이지 않게 도와줍니다.</p>
+      </div>
+      </div>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <h2 style="font-size: 43px; text-align: center;">다양한 카카오 프렌즈 만나기</h2>
+    <div class = "video_container">
+       <iframe src="https://www.youtube.com/embed/2i3JElHGRqY" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <iframe src="https://www.youtube.com/embed/5z_Qw5IsJok"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+
+    </div>
+  </div>
+
+  <div class="right">
+    <h2>카카오 헬스란?</h2>
+    <p>카카오 프렌즈들과 함께 운동할 수 있는 헬스 어플리케이션</p>
+  </div>
+
+  <div class="right">
+    <h2>카카오 프렌즈란?</h2>
+    <p>카카오와 함께하는 귀여운 동물캐릭터들</p>
+  </div>
+
+  <div class="right">
+    <h2>카카오 헬스가 할 수 있는일</h2>
+    <h3>운동량 측정</h3>
+    <p>카카오 헬스를 통해 수행한 운동을 입력하면 운동량을 측정해 줍니다.</p>
+    <h3>식단 관리</h3>
+    <p>그날 먹은 음식을 입력하면 칼로리를 측정해 줍니다.</p>
+    <h3>지속적인 관리</h3>
+    <p>매일매일 지속적인 관리로 건강관리에 도움을 줍니다.</p>
+  </div>
+</div>
+
+<footer class="footer" style="display: flex; justify-content: center;">
+  <div style="display: flex; justify-content: space-between; color: white; font-size: 16px;">
+    <div style="background-color: rgba(255, 255, 255, 0); padding: 10px; text-align: center; width:800px;">
+      <span>Email: joke1030@sungkyul.ac.kr</span>
+      <br><br>
+      <span>Phone: 010-9282-1234</span>
+      <br><br>
+      <span>Address: 경기도 안양시</span>
+    </div><br>
+    <div style="background-color: rgba(255, 255, 255, 0); padding: 10px; text-align: center;width:800px;">
+      <span>성결대학교 앱프로그래밍 과제로<br><br>카카오헬스와 관련된 반응형 웹페이지를 만들었습니다</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

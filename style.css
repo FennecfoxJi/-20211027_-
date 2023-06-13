@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+  }
+  .video_container {
+    display: flex;
+    flex-direction: odd;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video_container iframe {
+    max-width: 100%;
+    width: 800px;
+    height: 400px;
+  }
+
+  .button-large {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(255, 241, 47);
+    color: rgb(46, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    overflow:auto;
+}
+  .footer {
+    background-color:#263343;
+    text-align:center;
+    padding:10px;
+    margin-top:7px;
+    font-size:12px;
+    height : 200px;
+  }
+  .container1 {
+    background-image: url(img/all.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+    height : 800px;
+  }
+  .container2 {
+    background-image: url(img/kakaobanner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+    height : 300px;
+  }
+  .container3 {
+    background-image: url(img/banner2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+    height : 400px;
+  }
+
+  .container1 h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 200px;
+    color:rgb(39, 4, 4);
+  }
+/*탑메뉴*/
+a {
+  text-decoration: none;
+  color : white;
+  font-size : 20px;
+  padding : 30px;
+}
+
+b {
+  text-decoration: none;
+  color : white;
+  font-size : 30px;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+  background-color: #263343;
+  padding: 8px 12px;
+}
+
+.navbar_logo {
+  font-size: 24px;
+  color: white;
+}
+
+.navbar_logo i{
+  color: #f1ee07;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style:none;
+  padding-left: 0;
+}
+
+.navbar_menu1 {
+  display: flex;
+  flex-direction: column;
+  list-style:none;
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  padding: 8px 12px;
+}
+
+.navbar_menu1 li {
+  padding: 8px 12px;
+}
+
+.navbar_menu li:hover {
+  background-color : rgb(182, 170, 7);
+  border-radius: 15px;
+}
+
+.navbar_menu1 li:hover {
+  background-color : rgb(255, 241, 47);
+  border-radius: 15px;
+}
+
+.navbar_icons {
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar_icons li {
+  padding: 8px 12px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar_menu{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_icons {
+    justify-content: center;
+    width: 100%;
+  }
+
+}
+/*메인*/
+.container {
+    background-image: url(img/kakao1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+    height : 1000px;
+  }
+
+  .container h1 {
+    font-size: 100px;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 35px;
+    color:white;
+  }
+
+  .container h2 {
+    font-size: 80px;
+    text-align: left;
+    margin-left: 35px;
+    color:white;
+  }
+
+  @media screen and (max-width: 800px) {
+    .container{
+        height: 800px;
+        margin-top : 250px;
+    }
+    .container1{
+      height: 600px;
+      margin-top : 250px;
+  }
+  .container2{
+    height: 200px;
+    margin-top : 250px;
+  }
+.container3 {
+  height: 300px;
+  margin-top : 250px;
+}
+
+    .container h1 {
+      font-size: 60px;
+      margin-top: 50px;
+    }
+
+    .container1 h1 {
+        font-size: 80px;
+      }
+      .container2 h1 {
+        font-size: 80px;
+      }
+
+    .container h2 {
+      font-size: 40px;
+    }
+
+    .container1 h2 {
+        font-size: 40px;
+      }
+      .video_container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+  }
+
+  @media screen and (max-width: 500px) {
+    .container{
+        height: 600px;
+    }
+    .container1 {
+        height: 500px;
+    }
+    .container2 {
+      height: 150px;
+  }
+  .container3 {
+    height: 200px;
+  }
+    
+    .container h1 {
+      font-size: 50px;
+      margin-top: 40px;
+    }
+
+    .container1 h1 {
+        font-size: 50px;
+     }
+
+    .container h2 {
+      font-size: 30px;
+    }
+
+    .container1 h2 {
+        font-size: 30px;
+      }
+  }
+  /*카톡관련*/
+  .kakao-login {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .kakao-login img {
+        height: 100px;
+        width: auto;
+        border-radius: 10px;
+        margin-left: 35px;
+    }
+
+    @media (max-width: 800px) {
+        .kakao-login img {
+            height: 65px;
+            margin-left: 10px;
+        }
+    }
+    @media (max-width: 600px) {
+        .kakao-login img {
+            height: 40px;
+            margin-left: 10px;
+        }
+    }
+    /*아래부분*/
+.menu {
+  float: left;
+  width: 15%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 33px;
+  border-bottom: 1px solid #746f6f;
+}
+.main {
+  float: left;
+  width: 70%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.box-container {
+    display: flex;
+}
+
+.box {
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(255, 253, 123);
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 450px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.text-container {
+    margin-top: 10px; 
+    margin : 20px;
+}
+
+.right {
+  background-color: rgb(255, 219, 18);
+  float: left;
+  width: 15%;
+  padding: 10px 15px;
+  margin-top: 7px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width:1600px) {
+    .box img {
+        max-width: 90%;
+        height: auto;
+      }
+      .box text {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+    font-size : 20px;
+  }
+  .right {
+    width: 100%;
+    font-size : 20px;
+  }
+  .box-container {
+    flex-wrap: wrap;
+    }
+    
+    .box {
+    width: 100%;
+    }
+    .box img {
+        max-width: 150%;
+        height: auto;
+      }
+      .menuitem h2{
+        text-align : flex;
+      }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right, .box {
+    width: 100%;
+  }
+}
