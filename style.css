@@ -234,6 +234,14 @@ b {
         flex-direction: column;
         text-align: center;
       }
+      .footer {
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer > div {
+        width: 100%;
+        margin-bottom: 20px;
+      }
   }
 
   @media screen and (max-width: 500px) {
@@ -265,6 +273,15 @@ b {
 
     .container1 h2 {
         font-size: 30px;
+      }
+
+      .footer {
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer > div {
+        width: 100%;
+        margin-bottom: 20px;
       }
   }
   /*카톡관련*/
